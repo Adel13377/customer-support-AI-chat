@@ -1,9 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LinkedOut AI Customer Support Chatbot
+
+
+This is an AI-powered customer support chatbot project built using [Next.js](https://nextjs.org/), [React](https://reactjs.org/), and the [GroqAI API](https://console.groq.com/docs/quickstart). The project was developed as part of the Headstarter AI Fellowship, where we aimed to create a responsive and intelligent chatbot capable of assisting users in real-time.
+
+## Project Overview
+The application was deployed using AWS EC2 servers  
+Here is the [Live link](http://18.229.164.174/)
+
+## Project Overview
+
+The chatbot was designed to provide efficient customer support by handling queries intelligently. We achieved up to **3 Levels** of the project requirements, which included:
+
+- **Level 1:** Creating a basic chatbot with hard-coded responses.
+- **Level 2:** Integrating a Gen-AI model to respond intelligently to user inputs.
+- **Level 3:** Deploying the web app to AWS EC2 servers for real-world application.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the project locally, follow these steps:
 
+### Prerequisites
+
+Ensure you have Node.js installed on your machine. You can download it from [here](https://nodejs.org/).
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/customer-support-AI-chat.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd customer-support-AI-chat
+```
+3. Install the dependencies:
+```bash
+npm install
+```
+4. Add your GROQ API key [see below](#environment-variables) <br><br>
+5. Start the development server:
 ```bash
 npm run dev
 # or
@@ -14,24 +51,45 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Environment Variables
 
-## Learn More
+To run this project, you will need to add your GROQ API key to a `.env` file in the root directory of the project.
 
-To learn more about Next.js, take a look at the following resources:
+#### Steps to Add Your API Key
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1- Create a `.env` file in the root directory of your project:
+2- Open the .env file and add your GROQ API key like this:
+```bash
+GROQ_API_KEY=your-api-key-here
+```
+Replace your-api-key-here with your actual GROQ API key.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3- Save the file.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# customer-support-AI-chat
+
+## Features
+
+- **Next.js & React:** Frontend framework and library for building the chatbot interface.
+- **GroqAI API:** Integrated for generating intelligent responses.
+- **AWS EC2:** Final deployment environment ensuring the app is accessible online.
+
+## Team
+
+This project was developed as a collaborative effort with the following team members:
+
+- [**Bushrah Zulfiqar**](https://github.com/Bushrahhh)
+- [**Brian Ho**](https://github.com/brianforwork)
+- **Quang Le**
+
+## Acknowledgments
+
+Special thanks to Bill Zhang for his guidance and resources that helped steer this project to success.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
